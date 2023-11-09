@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.8); /* Use rgba for a semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 24px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-in-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Change to your preferred button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in-button:hover {
+    background-color: #0056b3; /* Change to a darker shade for hover effect */
+}

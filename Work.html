@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            background-color: bisque;
+            border-radius: 10px;
+            padding: 50px;
+            width:400px
+        }
+        div{
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 50%;
+            width: 400px;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        input[type='text'],input[type='password'],input[type='Email'],select,textarea{
+
+        }
+        input
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Don't have an Account? Want to join us?</h2>
+        <label for="name">Name</label>
+        <input type="text"placeholder='First name'><br>
+        <label for="Email">Email:</label>
+        <input type="Email"><br>
+        <label for="Password">Password</label>
+        <input type="password"><br>
+
+        <select name="City" id="City">
+            <option value="Cities">Select City</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option><br>
+        </select>
+
+        <label for="Address">Address</label>
+        <textarea name="Address" id="Address" cols="30" rows="10"></textarea>
+        <label for="Gender">Gender</label>
+        <input type="radio">Male
+        <input type="radio">Female
+        <input type="radio">Others
+        <input type="submit"value='Submit form'>
+        <input type="reset"value='Clear form'>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <script>
+        function calculateCalories() {
+            const gender = document.getElementById('gender').value;
+            const age = parseInt(document.getElementById('age').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+
+            let calorieNeeds = 0;
+
+            if (gender === 'male') {
+                calorieNeeds = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+            } else if (gender === 'female') {
+                calorieNeeds = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+            }
+
+            document.getElementById('result').textContent = `Your daily calorie needs are approximately ${calorieNeeds.toFixed(2)} calories.`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calorie Calculator</h1>
+    <form>
+        <label for="gender">Select your gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+
+        <label for="age">Age (years):</label>
+        <input type="number" id="age" required><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" required><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required><br>
+
+        <button type="button" onclick="calculateCalories()">Calculate Calories</button>
+    </form>
+
+    <p id="result"></p>
+</body>
+</html>

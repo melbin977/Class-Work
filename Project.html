@@ -1,0 +1,132 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create a flex container */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style the navigation links */
+.nav {
+  background-color: #f0f0f0;
+  width: 20%;
+  padding: 20px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav li a:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style the main content */
+.main {
+  background-color: #fff;
+  width: 60%;
+  padding: 20px;
+}
+
+/* Style the right column */
+.right {
+  background-color: #f0f0f0;
+  width: 20%;
+  padding: 20px;
+}
+
+/* Style the sections */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  margin-top: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+  <!-- Left column for navigation links -->
+  <div class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Enquiry</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+  </div>
+  
+  <!-- Middle column for main content -->
+  <div class="main">
+    <img src="1.png"height='100px' weight="100px">
+    <body background="Red Illustrated Background Recipe Card.png"></body>
+    <h1>Welcome to Healthy Habitats</h1>
+    <p>This is where you can put your main content.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis eros ullamcorper fringilla. Mauris id lacus vitae nisl consequat tincidunt. Donec vitae lorem quis augue aliquet sagittis. Fusce quis nisi sit amet massa luctus sagittis. Morbi euismod ligula ut leo malesuada, vitae mattis justo tincidunt. Phasellus sit amet semper eros, sed aliquet arcu.</p>
+    <p>Quisque id nisl ut nisi sollicitudin ultrices. Suspendisse potenti. Vivamus nec leo eget augue rutrum aliquam. Curabitur euismod lorem et velit sagittis, ac consequat erat lacinia. Cras vel sapien quis urna fermentum blandit. Aliquam erat volutpat. Sed at magna in velit blandit condimentum.</p>
+    <p>Nullam at dolor sed nibh tincidunt malesuada. Praesent vel augue id quam ullamcorper consequat. Aenean vitae lacus vitae eros feugiat varius. Ut ut mauris id lectus tristique aliquet. Fusce in elit nec justo consectetur venenatis.</p>
+    <p>Etiam ac nunc et eros ultrices malesuada. Duis quis nisl id massa ullamcorper faucibus. Sed euismod diam at semper consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    <p>Donec sit amet dolor sed lorem imperdiet tincidunt. Proin in lorem ut enim commodo iaculis. Sed sit amet quam non ante luctus lacinia.</p>
+    
+    <!-- You can add more content here -->
+    
+  </div>
+  
+  <!-- Right column for sections -->
+  <div class="right">
+    
+    <!-- Contact us section -->
+    <div class="section">
+      <h3>Contact us</h3>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <!-- About section -->
+    <div class="section">
+      <h3>About</h3>
+      <p>This is where you can put some information about yourself or your company.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis eros ullamcorper fringilla. Mauris id lacus vitae nisl consequat tincidunt. Donec vitae lorem quis augue aliquet sagittis.</p>
+    </div>
+    
+    <!-- Home section -->
+    <div class="section">
+      <h3>Home</h3>
+      <p>This is where you can put some information about your home page.</p>
+      <p>Quisque id nisl ut nisi sollicitudin ultrices. Suspendisse potenti. Vivamus nec leo eget augue rutrum aliquam. Curabitur euismod lorem et velit sagittis, ac consequat erat lacinia.</p>
+    </div>
+    
+    <!-- You can add more sections here -->
+    
+  </div>
+
+</div>
+
+</body>
+</html>
